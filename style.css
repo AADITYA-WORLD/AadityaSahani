@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: white;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+header {
+  height: 45px;
+  padding: 0px 10px;
+}
+
+.nav-bar {
+  width: 100%;
+  margin: 10px 0px;
+}
+
+.menu {
+  color: rgb(41, 139, 219);
+  font-size: 20px;
+  display: none;
+  margin-top: 15px;
+}
+
+.cross {
+  display: none;
+}
+
+.nav-left {
+  font-size: 1.4rem;
+  font-weight: 600;
+  align-self: center;
+  color: rgb(41, 139, 219);
+}
+
+.nav-right {
+  font-size: 1.3rem;
+  align-self: center;
+  font-weight: 500;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.spa{
+  text-decoration: none;
+  color: black;
+}
+.spa::after {
+  content: "";
+  height: 3px;
+  display: block;
+  background-color: blue;
+  width: 0%;
+  transition: 0.5s;
+}
+
+.spa:hover::after {
+  width: 100%;
+}
+
+.spa:hover {
+  color: blue;
+}
+
+
+.btn {
+  padding: 8px 15px;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 13px;
+  background-color: rgb(41, 139, 219);
+}
+
+.btn:hover {
+  transform: scale(1.07);
+  transition: 0.3s;
+  background: linear-gradient(to right,#007bff,#00c6ff);
+}
+
+@media (max-width:576px) {
+  .menu {
+    display: block;
+  }
+
+  .cross {
+    display: block;
+  }
+
+  .nav-right {
+    top: 0;
+    right: -200px;
+    padding: 20px;
+    position: fixed;
+    flex-direction: column;
+    height: 100vh;
+    width: 200px;
+    background-color: rgb(95, 169, 230);
+    z-index: 99;
+    transition: 1s;
+  }
+}
+
+
+/* ---------section1------------ */
+.section1 {
+  margin-top: 20px;
+  gap: 20px;
+  height: 80vh;
+  background: linear-gradient(to bottom,#0e0e0e,#1b1b1b);
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.top-left img {
+  width: 300px;
+  border-radius: 50%;
+}
+
+.top-left h1 {
+  text-align: left;
+  color: rgb(41, 139, 219);
+  text-decoration: underline;
+}
+
+.top-left p {
+  margin: 10px;
+  text-align: left;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.top-right img {
+  width: 40vw;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.section2 {
+  margin: 10px 0px;
+}
+
+.section2 h1 {
+  font-weight: 400;
+}
+
+@media (max-width:576px) {
+  .section1 {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .top-right img {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+/* ---------section2------------ */
+
+.section2 .text {
+  width: 40vw;
+  margin: auto;
+  margin: 5px 0px;
+  text-align: center;
+  color: grey;
+}
+
+.boxes {
+  gap: 15px;
+  margin: 20px 0px;
+}
+
+.box {
+  border: 2px solid grey;
+  border-radius: 5px;
+}
+
+.box h3 {
+  width: 100%;
+  border-bottom: 2px solid grey;
+  font-weight: 600;
+  text-align: center;
+  padding: 10px 0px;
+  background-color: rgb(240, 237, 237);
+}
+
+.box p {
+  font-size: 30px;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.box span {
+  font-weight: 400;
+  color: grey;
+  font-size: 25px;
+}
+
+.box ul {
+  margin: 5px 0px;
+  gap: 4px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.box button {
+  background-color: blue;
+  color: whitesmoke;
+  font-size: 15px;
+  padding: 10px 0px;
+  width: 250px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.box button:hover {
+  background-color: green;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+.box3 {
+  border-color: blue;
+}
+
+.box3 h3 {
+  background-color: blue;
+  color: white;
+}
+
+@media (max-width:576px) {
+  .section2 .boxes {
+    flex-direction: column;
+  }
+}
+
+/* ---------section3------------ */
+
+.section3 h1 {
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.table {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 2px solid black;
+}
+
+td,
+th {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 200px;
+  text-align: center;
+}
+
+@media (max-width:576px) {
+
+  td,
+  th {
+    width: 100px;
+  }
+
+}
+
+/* -------footer--------- */
+.footer {
+  background-color: black;
+  color: white;
+  width: 100%;
+  padding: 50px;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.first {
+  width: 20%;
+}
+
+.first h1 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.footer h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  font-size: 15px;
+}
+
+@media (max-width:576px) {
+  .footer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .second{
+    margin-left: -35px;
+  }
+
+  .first {
+    width: 100%;
+  }
+}

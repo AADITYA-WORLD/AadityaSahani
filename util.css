@@ -1,0 +1,26 @@
+
+.bg-red{
+  background-color: red;
+}
+
+.flex{
+  display: flex;
+}
+.align-item{
+  align-items:center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.list-style{
+  list-style: none;
+}
+.flex-column{
+  flex-direction: column;
+}
